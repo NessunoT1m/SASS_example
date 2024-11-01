@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.back_img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-25%) translateY(-5%) scaleX(-1);
+          transform: translateX(-25%) translateY(-5%) scaleX(-1);
+  color: transparent;
+}
+
+.header {
+  height: 150px;
+}
+.header .container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.header .container .logo {
+  width: 200px;
+  height: auto;
+}
+.header .container .title_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2563eb;
+}
+.header .container .button {
+  background-color: #2563eb;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.primary_text {
+  height: 100vh;
+}
+.primary_text .container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  width: 55%;
+  padding: 100px 20px;
+}
+.primary_text .container .title {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: -0.05em;
+}
+.primary_text .container .description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+  color: #4369b3;
+}
+.primary_text .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+  margin-top: 50px;
+}
+.primary_text .container .info .title_info {
+  color: rgb(37, 99, 235);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.primary_text .container .info .secondary_text {
+  color: rgb(30, 58, 138);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}/*# sourceMappingURL=style.css.map */

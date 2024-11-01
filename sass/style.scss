@@ -1,0 +1,130 @@
+$PrimaryColor:  #2563eb; 
+$SecondaryColor: #4369b3; 
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin container{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin button{
+    background-color: $PrimaryColor;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.back_img{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-25%) translateY(-5%) scaleX(-1) ;
+    color: transparent;
+}
+
+.header{
+    height: 150px;
+
+    .container{
+        @include container;
+        @include flex-between;
+        height: 100%;
+
+        .logo{
+            width: 200px;
+            height: auto;
+        }
+        
+        // .nav{
+        //     @include flex-between;
+        //     font-size: 20px;
+        //     width: 40%;
+        // }
+
+        // .nav a{
+        //     padding: 10px;
+        // }
+
+        // .nav a:hover{
+        //     border-radius: 20px;
+        //     background-color: $SecondaryColor;
+        //     color: white;
+        //     cursor: pointer;
+        // }
+        .title_text{
+            display: flex;
+            color: $PrimaryColor
+        }
+
+        .button{
+            @include button;
+        }
+    }
+}
+
+.primary_text {
+    height: 100vh;
+
+    .container{
+        @include container;
+        height: 100vh;
+        width: 55%;
+        padding: 100px 20px;
+
+        .title{
+            font-size: 5rem;
+            line-height: 1;
+            font-weight: 700;
+            color: $PrimaryColor;
+            letter-spacing: -.05em;
+        }
+
+        .description{
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            letter-spacing: -.025em;
+            color: $SecondaryColor;
+        }
+
+        .info{
+            @include flex-between;
+            line-height: 1.5;
+            margin-top: 50px;
+            
+            .title_info{
+                color: rgb(37 99 235);
+                font-size: .875rem;
+                line-height: 1.5rem;
+            }
+
+            .secondary_text{
+                color: rgb(30 58 138);
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
